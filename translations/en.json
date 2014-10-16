@@ -1,0 +1,42 @@
+{
+    "app": {
+        "description":  {
+            "value": "This app will display a link to DDTi customer data in CRM",
+            "title": "app description"
+        },
+        "short_description":  {
+            "value": "Generates links to Contacts and Accounts for Users and Organizations in Zendesk",
+            "title": "app short description"
+        },
+        "parameters": {
+            "home_url"  : { "label": "CRM Home URL", "helpText": "URL for the CRM home page." },
+            "user_url"  : { "label": "Contact URL", "helpText": "Enter the URL for the CRM contact page. Use {{user.external_id}} as a placeholder for the contact GUID." },
+            "agent_url" : { "label": "Agent URL", "helpText": "Enter the URL for the CRM (internal) user display. Use {{agent.external_id}} as a placeholder for the user GUID." },
+            "org_url"   : { "label": "Organization URL", "helpText": "Enter the URL for the CRM organization display. Use {{organization.external_id}} as a placeholder for the organization GUID." }
+        }
+    },
+    "name": {
+        "value": "DDTi CRM Links",
+        "title": "app name"
+    },
+    "loading": {
+        "value": "DDTi CRM data loading",
+        "title": "loading placeholder"
+    },
+    "fetch": {
+        "done": {
+          "value": "Good",
+          "title": "fetch success"
+        },
+        "fail": {
+            "value": "failed to fecth information from the server",
+            "title": "fetch failure"
+        }
+    },
+    "parameters": {
+        "uri_templates": {
+            "label": "A JSON Array of urls.",
+            "helpText": "Must be configured with a valid JSON string defining the CRM URL to be called by the app. The only valid placeholders are {{user.external_id}} and {{organization.external_id}}, which should map to the Contact GUID and Account GUID in CRM, respectively."
+        }
+    }
+}

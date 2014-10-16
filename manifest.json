@@ -1,0 +1,63 @@
+{
+    "name": "DDTi CRM Links",
+    "author": {
+        "name": "Craig Hamm",
+        "email": "chamm@ddti.net",
+        "url": "https://support.ddti.net"
+    },
+    "defaultLocale": "en",
+    "private": true,
+    "location": ["user_sidebar", "ticket_sidebar", "new_ticket_sidebar"],
+    "version": "1.4.1",
+    "frameworkVersion": "1.0",
+    "parameters": [
+        {
+            "name": "home_url",
+            "type": "url",
+            "required": "false",
+            "default": "https://crm.ddti.net/main.aspx"
+        },
+                {
+            "name": "home_label",
+            "type": "text",
+            "required": "false",
+            "default": "CRM Home"
+        },
+        {
+            "name": "user_url",
+            "type": "url",
+            "required": "false",
+            "default": "https://crm.ddti.net/main.aspx?etc=2&extraqs=%3fetc%3d2%26id%3d%257b{{user.external_id}}%257d%26pagemode%3diframe%26preloadcache%3d1409073386370&pagetype=entityrecord"
+        },
+                {
+            "name": "user_label",
+            "type": "text",
+            "required": "false",
+            "default": "CRM Contact"
+        },
+        {
+            "name": "agent_url",
+            "type": "url",
+            "required": "false",
+            "default": "https://crm.ddti.net/main.aspx?etc=8&extraqs=%3f_gridType%3d8%26etc%3d8%26id%3d%257b{{agent.external_id}}%257d%26pagemode%3diframe%26preloadcache%3d1412343139898%26rskey%3d877050599&pagetype=entityrecord"
+        },
+                {
+            "name": "agent_label",
+            "type": "text",
+            "required": "false",
+            "default": "CRM User"
+        },
+        {
+            "name": "org_url",
+            "type": "url",
+            "required": "false",
+            "default": "https://crm.ddti.net/main.aspx?etc=1&extraqs=%3fetc%3d1%26id%3d%257b{{organization.external_id}}%257d%26pagemode%3diframe%26preloadcache%3d1409073386370&pagetype=entityrecord"
+        },
+                {
+            "name": "org_label",
+            "type": "text",
+            "required": "false",
+            "default": "CRM Account"
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+<div class="well well-small">
+  <ul>
+    {{#each buttons}}
+    <li>
+        <strong><a href="#" onclick="javascript:window.open('{{this.url}}','CRM Popup','location=0,menubar=0,status=0,scrollbars=0,toolbar=0,titlebar=0,theatermode=1,width=1024,height=768'); return false;" class="btn">{{this.label}}</a></strong>
+    </li>
+    {{/each}} 
+
+  </ul>
+</div>

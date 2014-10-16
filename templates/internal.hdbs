@@ -1,0 +1,8 @@
+<div class="well well-small">
+  <ul>
+    <strong><a href="#" onclick="javascript:window.open('https://crm.ddti.net/main.aspx','CRM Popup','location=0,menubar=0,status=0,scrollbars=0,toolbar=0,titlebar=0,theatermode=1,width=1024,height=768'); return false;" class="btn">CRM Home</a></strong>
+    <br>
+    <hr>
+    <span style="text-align:center"><h4>DDTi Agent Selected</h4>
+  </ul>
+</div>
